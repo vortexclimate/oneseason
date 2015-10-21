@@ -24,14 +24,14 @@
     <script>
       function main() {
         cartodb.createVis('map', 'https://glizcano.cartodb.com/api/v2/viz/5cf42ce2-77e6-11e5-8906-0ecfd53eb7d3/viz.json', {
-            shareable: true,
+            shareable: false,
             title: true,
             description: true,
-            search: true,
+            search: false,
             tiles_loader: true,
-            center_lat: 0,
-            center_lon: 0,
-            zoom: 2
+            center_lat: -25,
+            center_lon: 15,
+            zoom: 5
         })
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer
